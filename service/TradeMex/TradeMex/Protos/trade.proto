@@ -35,14 +35,12 @@ message CancelOrderRequest {
 message CancelOrderResponse {
   string orderId = 1;
   ResponseType responseType = 2;
-  google.protobuf.Timestamp cancelationTime = 3;
+  google.protobuf.Timestamp cancellationTime = 3;
 }
 
 message UpdateOrderRequest {
   string orderId = 1;
-  OrderType orderType = 2;
-  string instrumentCode = 3;
-  DecimalValue price = 4;
+  DecimalValue price = 2;
 }
 
 // Order Creation Response

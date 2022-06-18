@@ -1,0 +1,3 @@
+obj\Debug\net6.0\Protos/Trade.cs \
+obj\Debug\net6.0\Protos/TradeGrpc.cs: C:/Users/lsegu/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/trade.proto

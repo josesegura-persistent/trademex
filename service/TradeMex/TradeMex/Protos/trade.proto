@@ -1,0 +1,99 @@
+syntax = "proto3";
+
+option csharp_namespace = "TradeMex";
+
+import "google/protobuf/timestamp.proto";
+
+package trademex;
+
+service Trader {
+  // Creates new order in the Book
+  rpc CreateOrder (CreateOrderRequest) returns (CreateOrderResponse);
+  // Cancel order in the Book
+  rpc CancelOrder (CancelOrderRequest) returns (CancelOrderResponse);
+  // Update order in the Book
+  rpc UpdateOrder (UpdateOrderRequest) returns (UpdateOrderResponse);
+}
+
+// Order Creation Request
+message CreateOrderRequest {
+  OrderType orderType = 1;
+  string instrumentCode = 2;
+  DecimalValue price = 3;
+}
+
+// Order Creation Response
+message CreateOrderResponse {
+  ResponseType responseType = 1;
+  Order order = 2;
+}
+
+message CancelOrderRequest {
+  string orderId = 1;
+}
+
+message CancelOrderResponse {
+  string orderId = 1;
+  ResponseType responseType = 2;
+  google.protobuf.Timestamp cancelationTime = 3;
+}
+
+message UpdateOrderRequest {
+  string orderId = 1;
+  OrderType orderType = 2;
+  string instrumentCode = 3;
+  DecimalValue price = 4;
+}
+
+// Order Creation Response
+message UpdateOrderResponse {
+  string orderId = 1;
+  ResponseType responseType = 2;
+  google.protobuf.Timestamp updateTime = 3;
+}
+
+// Common types
+
+message Order {
+  string id = 1;
+  OrderType type = 2;
+  string instrument = 3;
+  DecimalValue price = 4;
+  google.protobuf.Timestamp creationTime = 5;
+  OrderStatus status = 6;
+  google.protobuf.Timestamp cancellationTime = 7;
+  google.protobuf.Timestamp updateTime = 8;
+}
+
+enum OrderStatus {
+  Active = 0;
+  Canceled = 1;
+}
+
+enum OrderType{
+  Buy = 0;
+  Sell = 1;
+}
+
+enum ResponseType{
+  Accepted = 0;
+  Rejected = 1;
+}
+
+// Name "DecimalValue" prevents conflict with C# Decimal type
+message DecimalValue {
+
+  // The whole units of the amount.
+  int64 units = 1;
+
+  // Number of nano (10^-9) units of the amount.
+  // The value must be between -999,999,999 and +999,999,999 inclusive.
+  // If `units` is positive, `nanos` must be positive or zero.
+  // If `units` is zero, `nanos` can be positive, zero, or negative.
+  // If `units` is negative, `nanos` must be negative or zero.
+  // For example $-1.75 is represented as `units`=-1 and `nanos`=-750,000,000.
+  sfixed32 nanos = 2;
+}
+
+
+

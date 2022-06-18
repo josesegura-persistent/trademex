@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option csharp_namespace = "TradeMexClient";
+
+import "google/protobuf/timestamp.proto";
+import "Protos/trade.proto";
+
+package trademex;
+
+service OrderBook {
+  rpc GetOrderBookSnapshot (GetOrderBookSnapshotRequest) returns (GetOrderBookSnapshotResponse);
+}
+
+message GetOrderBookSnapshotRequest {
+}
+
+// Order Creation Response
+message GetOrderBookSnapshotResponse {
+
+  OrderBookSnapshot snapshot = 1;
+}
+
+message OrderBookSnapshot {
+  google.protobuf.Timestamp requestTime = 1;
+  repeated Order orders = 2;
+}
+
+

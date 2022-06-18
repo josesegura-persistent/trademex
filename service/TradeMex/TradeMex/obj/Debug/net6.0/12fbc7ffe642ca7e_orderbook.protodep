@@ -1,0 +1,4 @@
+obj\Debug\net6.0\Protos/Orderbook.cs \
+obj\Debug\net6.0\Protos/OrderbookGrpc.cs: C:/Users/lsegu/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/trade.proto\
+ Protos/orderbook.proto

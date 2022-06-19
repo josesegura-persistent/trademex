@@ -25,47 +25,47 @@ namespace TradeMex {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChJQcm90b3MvdHJhZGUucHJvdG8SCHRyYWRlbWV4Gh9nb29nbGUvcHJvdG9i",
-            "dWYvdGltZXN0YW1wLnByb3RvInsKEkNyZWF0ZU9yZGVyUmVxdWVzdBImCglv",
-            "cmRlclR5cGUYASABKA4yEy50cmFkZW1leC5PcmRlclR5cGUSFgoOaW5zdHJ1",
-            "bWVudENvZGUYAiABKAkSJQoFcHJpY2UYAyABKAsyFi50cmFkZW1leC5EZWNp",
-            "bWFsVmFsdWUiYwoTQ3JlYXRlT3JkZXJSZXNwb25zZRIsCgxyZXNwb25zZVR5",
-            "cGUYASABKA4yFi50cmFkZW1leC5SZXNwb25zZVR5cGUSHgoFb3JkZXIYAiAB",
-            "KAsyDy50cmFkZW1leC5PcmRlciIlChJDYW5jZWxPcmRlclJlcXVlc3QSDwoH",
-            "b3JkZXJJZBgBIAEoCSKKAQoTQ2FuY2VsT3JkZXJSZXNwb25zZRIPCgdvcmRl",
-            "cklkGAEgASgJEiwKDHJlc3BvbnNlVHlwZRgCIAEoDjIWLnRyYWRlbWV4LlJl",
-            "c3BvbnNlVHlwZRI0ChBjYW5jZWxsYXRpb25UaW1lGAMgASgLMhouZ29vZ2xl",
-            "LnByb3RvYnVmLlRpbWVzdGFtcCJMChJVcGRhdGVPcmRlclJlcXVlc3QSDwoH",
-            "b3JkZXJJZBgBIAEoCRIlCgVwcmljZRgCIAEoCzIWLnRyYWRlbWV4LkRlY2lt",
-            "YWxWYWx1ZSKEAQoTVXBkYXRlT3JkZXJSZXNwb25zZRIPCgdvcmRlcklkGAEg",
-            "ASgJEiwKDHJlc3BvbnNlVHlwZRgCIAEoDjIWLnRyYWRlbWV4LlJlc3BvbnNl",
-            "VHlwZRIuCgp1cGRhdGVUaW1lGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
-            "bWVzdGFtcCKwAgoFT3JkZXISCgoCaWQYASABKAkSIQoEdHlwZRgCIAEoDjIT",
-            "LnRyYWRlbWV4Lk9yZGVyVHlwZRISCgppbnN0cnVtZW50GAMgASgJEiUKBXBy",
-            "aWNlGAQgASgLMhYudHJhZGVtZXguRGVjaW1hbFZhbHVlEjAKDGNyZWF0aW9u",
-            "VGltZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASJQoGc3Rh",
-            "dHVzGAYgASgOMhUudHJhZGVtZXguT3JkZXJTdGF0dXMSNAoQY2FuY2VsbGF0",
-            "aW9uVGltZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLgoK",
-            "dXBkYXRlVGltZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAi",
-            "LAoMRGVjaW1hbFZhbHVlEg0KBXVuaXRzGAEgASgDEg0KBW5hbm9zGAIgASgP",
-            "KicKC09yZGVyU3RhdHVzEgoKBkFjdGl2ZRAAEgwKCENhbmNlbGVkEAEqHgoJ",
-            "T3JkZXJUeXBlEgcKA0J1eRAAEggKBFNlbGwQASoqCgxSZXNwb25zZVR5cGUS",
-            "DAoIQWNjZXB0ZWQQABIMCghSZWplY3RlZBABMuwBCgZUcmFkZXISSgoLQ3Jl",
-            "YXRlT3JkZXISHC50cmFkZW1leC5DcmVhdGVPcmRlclJlcXVlc3QaHS50cmFk",
-            "ZW1leC5DcmVhdGVPcmRlclJlc3BvbnNlEkoKC0NhbmNlbE9yZGVyEhwudHJh",
-            "ZGVtZXguQ2FuY2VsT3JkZXJSZXF1ZXN0Gh0udHJhZGVtZXguQ2FuY2VsT3Jk",
-            "ZXJSZXNwb25zZRJKCgtVcGRhdGVPcmRlchIcLnRyYWRlbWV4LlVwZGF0ZU9y",
-            "ZGVyUmVxdWVzdBodLnRyYWRlbWV4LlVwZGF0ZU9yZGVyUmVzcG9uc2VCC6oC",
-            "CFRyYWRlTWV4YgZwcm90bzM="));
+            "dWYvdGltZXN0YW1wLnByb3RvInIKEkNyZWF0ZU9yZGVyUmVxdWVzdBImCglv",
+            "cmRlclR5cGUYASABKA4yEy50cmFkZW1leC5PcmRlclR5cGUSDQoFc3RvY2sY",
+            "AiABKAkSJQoFcHJpY2UYAyABKAsyFi50cmFkZW1leC5EZWNpbWFsVmFsdWUi",
+            "YwoTQ3JlYXRlT3JkZXJSZXNwb25zZRIsCgxyZXNwb25zZVR5cGUYASABKA4y",
+            "Fi50cmFkZW1leC5SZXNwb25zZVR5cGUSHgoFb3JkZXIYAiABKAsyDy50cmFk",
+            "ZW1leC5PcmRlciIlChJDYW5jZWxPcmRlclJlcXVlc3QSDwoHb3JkZXJJZBgB",
+            "IAEoCSKKAQoTQ2FuY2VsT3JkZXJSZXNwb25zZRIPCgdvcmRlcklkGAEgASgJ",
+            "EiwKDHJlc3BvbnNlVHlwZRgCIAEoDjIWLnRyYWRlbWV4LlJlc3BvbnNlVHlw",
+            "ZRI0ChBjYW5jZWxsYXRpb25UaW1lGAMgASgLMhouZ29vZ2xlLnByb3RvYnVm",
+            "LlRpbWVzdGFtcCJMChJVcGRhdGVPcmRlclJlcXVlc3QSDwoHb3JkZXJJZBgB",
+            "IAEoCRIlCgVwcmljZRgCIAEoCzIWLnRyYWRlbWV4LkRlY2ltYWxWYWx1ZSKr",
+            "AQoTVXBkYXRlT3JkZXJSZXNwb25zZRIPCgdvcmRlcklkGAEgASgJEiwKDHJl",
+            "c3BvbnNlVHlwZRgCIAEoDjIWLnRyYWRlbWV4LlJlc3BvbnNlVHlwZRIuCgp1",
+            "cGRhdGVUaW1lGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIl",
+            "CgVwcmljZRgEIAEoCzIWLnRyYWRlbWV4LkRlY2ltYWxWYWx1ZSKrAgoFT3Jk",
+            "ZXISCgoCaWQYASABKAkSIQoEdHlwZRgCIAEoDjITLnRyYWRlbWV4Lk9yZGVy",
+            "VHlwZRINCgVzdG9jaxgDIAEoCRIlCgVwcmljZRgEIAEoCzIWLnRyYWRlbWV4",
+            "LkRlY2ltYWxWYWx1ZRIwCgxjcmVhdGlvblRpbWUYBSABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEiUKBnN0YXR1cxgGIAEoDjIVLnRyYWRlbWV4",
+            "Lk9yZGVyU3RhdHVzEjQKEGNhbmNlbGxhdGlvblRpbWUYByABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wEi4KCnVwZGF0ZVRpbWUYCCABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wIiwKDERlY2ltYWxWYWx1ZRINCgV1",
+            "bml0cxgBIAEoAxINCgVuYW5vcxgCIAEoDyonCgtPcmRlclN0YXR1cxIKCgZB",
+            "Y3RpdmUQABIMCghDYW5jZWxlZBABKh4KCU9yZGVyVHlwZRIHCgNCdXkQABII",
+            "CgRTZWxsEAEqKgoMUmVzcG9uc2VUeXBlEgwKCEFjY2VwdGVkEAASDAoIUmVq",
+            "ZWN0ZWQQATLsAQoGVHJhZGVyEkoKC0NyZWF0ZU9yZGVyEhwudHJhZGVtZXgu",
+            "Q3JlYXRlT3JkZXJSZXF1ZXN0Gh0udHJhZGVtZXguQ3JlYXRlT3JkZXJSZXNw",
+            "b25zZRJKCgtDYW5jZWxPcmRlchIcLnRyYWRlbWV4LkNhbmNlbE9yZGVyUmVx",
+            "dWVzdBodLnRyYWRlbWV4LkNhbmNlbE9yZGVyUmVzcG9uc2USSgoLVXBkYXRl",
+            "T3JkZXISHC50cmFkZW1leC5VcGRhdGVPcmRlclJlcXVlc3QaHS50cmFkZW1l",
+            "eC5VcGRhdGVPcmRlclJlc3BvbnNlQguqAghUcmFkZU1leGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TradeMex.OrderStatus), typeof(global::TradeMex.OrderType), typeof(global::TradeMex.ResponseType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.CreateOrderRequest), global::TradeMex.CreateOrderRequest.Parser, new[]{ "OrderType", "InstrumentCode", "Price" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.CreateOrderRequest), global::TradeMex.CreateOrderRequest.Parser, new[]{ "OrderType", "Stock", "Price" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.CreateOrderResponse), global::TradeMex.CreateOrderResponse.Parser, new[]{ "ResponseType", "Order" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.CancelOrderRequest), global::TradeMex.CancelOrderRequest.Parser, new[]{ "OrderId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.CancelOrderResponse), global::TradeMex.CancelOrderResponse.Parser, new[]{ "OrderId", "ResponseType", "CancellationTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.UpdateOrderRequest), global::TradeMex.UpdateOrderRequest.Parser, new[]{ "OrderId", "Price" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.UpdateOrderResponse), global::TradeMex.UpdateOrderResponse.Parser, new[]{ "OrderId", "ResponseType", "UpdateTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.Order), global::TradeMex.Order.Parser, new[]{ "Id", "Type", "Instrument", "Price", "CreationTime", "Status", "CancellationTime", "UpdateTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.UpdateOrderResponse), global::TradeMex.UpdateOrderResponse.Parser, new[]{ "OrderId", "ResponseType", "UpdateTime", "Price" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.Order), global::TradeMex.Order.Parser, new[]{ "Id", "Type", "Stock", "Price", "CreationTime", "Status", "CancellationTime", "UpdateTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TradeMex.DecimalValue), global::TradeMex.DecimalValue.Parser, new[]{ "Units", "Nanos" }, null, null, null, null)
           }));
     }
@@ -91,9 +91,6 @@ namespace TradeMex {
   #endregion
 
   #region Messages
-  /// <summary>
-  /// Order Creation Request
-  /// </summary>
   public sealed partial class CreateOrderRequest : pb::IMessage<CreateOrderRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -124,7 +121,7 @@ namespace TradeMex {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CreateOrderRequest(CreateOrderRequest other) : this() {
       orderType_ = other.orderType_;
-      instrumentCode_ = other.instrumentCode_;
+      stock_ = other.stock_;
       price_ = other.price_ != null ? other.price_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -145,14 +142,14 @@ namespace TradeMex {
       }
     }
 
-    /// <summary>Field number for the "instrumentCode" field.</summary>
-    public const int InstrumentCodeFieldNumber = 2;
-    private string instrumentCode_ = "";
+    /// <summary>Field number for the "stock" field.</summary>
+    public const int StockFieldNumber = 2;
+    private string stock_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string InstrumentCode {
-      get { return instrumentCode_; }
+    public string Stock {
+      get { return stock_; }
       set {
-        instrumentCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        stock_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -181,7 +178,7 @@ namespace TradeMex {
         return true;
       }
       if (OrderType != other.OrderType) return false;
-      if (InstrumentCode != other.InstrumentCode) return false;
+      if (Stock != other.Stock) return false;
       if (!object.Equals(Price, other.Price)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -190,7 +187,7 @@ namespace TradeMex {
     public override int GetHashCode() {
       int hash = 1;
       if (OrderType != global::TradeMex.OrderType.Buy) hash ^= OrderType.GetHashCode();
-      if (InstrumentCode.Length != 0) hash ^= InstrumentCode.GetHashCode();
+      if (Stock.Length != 0) hash ^= Stock.GetHashCode();
       if (price_ != null) hash ^= Price.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -212,9 +209,9 @@ namespace TradeMex {
         output.WriteRawTag(8);
         output.WriteEnum((int) OrderType);
       }
-      if (InstrumentCode.Length != 0) {
+      if (Stock.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(InstrumentCode);
+        output.WriteString(Stock);
       }
       if (price_ != null) {
         output.WriteRawTag(26);
@@ -233,9 +230,9 @@ namespace TradeMex {
         output.WriteRawTag(8);
         output.WriteEnum((int) OrderType);
       }
-      if (InstrumentCode.Length != 0) {
+      if (Stock.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(InstrumentCode);
+        output.WriteString(Stock);
       }
       if (price_ != null) {
         output.WriteRawTag(26);
@@ -253,8 +250,8 @@ namespace TradeMex {
       if (OrderType != global::TradeMex.OrderType.Buy) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) OrderType);
       }
-      if (InstrumentCode.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(InstrumentCode);
+      if (Stock.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Stock);
       }
       if (price_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Price);
@@ -273,8 +270,8 @@ namespace TradeMex {
       if (other.OrderType != global::TradeMex.OrderType.Buy) {
         OrderType = other.OrderType;
       }
-      if (other.InstrumentCode.Length != 0) {
-        InstrumentCode = other.InstrumentCode;
+      if (other.Stock.Length != 0) {
+        Stock = other.Stock;
       }
       if (other.price_ != null) {
         if (price_ == null) {
@@ -301,7 +298,7 @@ namespace TradeMex {
             break;
           }
           case 18: {
-            InstrumentCode = input.ReadString();
+            Stock = input.ReadString();
             break;
           }
           case 26: {
@@ -330,7 +327,7 @@ namespace TradeMex {
             break;
           }
           case 18: {
-            InstrumentCode = input.ReadString();
+            Stock = input.ReadString();
             break;
           }
           case 26: {
@@ -347,9 +344,6 @@ namespace TradeMex {
 
   }
 
-  /// <summary>
-  /// Order Creation Response
-  /// </summary>
   public sealed partial class CreateOrderResponse : pb::IMessage<CreateOrderResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1209,9 +1203,6 @@ namespace TradeMex {
 
   }
 
-  /// <summary>
-  /// Order Creation Response
-  /// </summary>
   public sealed partial class UpdateOrderResponse : pb::IMessage<UpdateOrderResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1244,6 +1235,7 @@ namespace TradeMex {
       orderId_ = other.orderId_;
       responseType_ = other.responseType_;
       updateTime_ = other.updateTime_ != null ? other.updateTime_.Clone() : null;
+      price_ = other.price_ != null ? other.price_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1285,6 +1277,17 @@ namespace TradeMex {
       }
     }
 
+    /// <summary>Field number for the "price" field.</summary>
+    public const int PriceFieldNumber = 4;
+    private global::TradeMex.DecimalValue price_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::TradeMex.DecimalValue Price {
+      get { return price_; }
+      set {
+        price_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as UpdateOrderResponse);
@@ -1301,6 +1304,7 @@ namespace TradeMex {
       if (OrderId != other.OrderId) return false;
       if (ResponseType != other.ResponseType) return false;
       if (!object.Equals(UpdateTime, other.UpdateTime)) return false;
+      if (!object.Equals(Price, other.Price)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1310,6 +1314,7 @@ namespace TradeMex {
       if (OrderId.Length != 0) hash ^= OrderId.GetHashCode();
       if (ResponseType != global::TradeMex.ResponseType.Accepted) hash ^= ResponseType.GetHashCode();
       if (updateTime_ != null) hash ^= UpdateTime.GetHashCode();
+      if (price_ != null) hash ^= Price.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1338,6 +1343,10 @@ namespace TradeMex {
         output.WriteRawTag(26);
         output.WriteMessage(UpdateTime);
       }
+      if (price_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Price);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1359,6 +1368,10 @@ namespace TradeMex {
         output.WriteRawTag(26);
         output.WriteMessage(UpdateTime);
       }
+      if (price_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Price);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1376,6 +1389,9 @@ namespace TradeMex {
       }
       if (updateTime_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateTime);
+      }
+      if (price_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Price);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1399,6 +1415,12 @@ namespace TradeMex {
           UpdateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         UpdateTime.MergeFrom(other.UpdateTime);
+      }
+      if (other.price_ != null) {
+        if (price_ == null) {
+          Price = new global::TradeMex.DecimalValue();
+        }
+        Price.MergeFrom(other.Price);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1429,6 +1451,13 @@ namespace TradeMex {
             input.ReadMessage(UpdateTime);
             break;
           }
+          case 34: {
+            if (price_ == null) {
+              Price = new global::TradeMex.DecimalValue();
+            }
+            input.ReadMessage(Price);
+            break;
+          }
         }
       }
     #endif
@@ -1456,6 +1485,13 @@ namespace TradeMex {
               UpdateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(UpdateTime);
+            break;
+          }
+          case 34: {
+            if (price_ == null) {
+              Price = new global::TradeMex.DecimalValue();
+            }
+            input.ReadMessage(Price);
             break;
           }
         }
@@ -1496,7 +1532,7 @@ namespace TradeMex {
     public Order(Order other) : this() {
       id_ = other.id_;
       type_ = other.type_;
-      instrument_ = other.instrument_;
+      stock_ = other.stock_;
       price_ = other.price_ != null ? other.price_.Clone() : null;
       creationTime_ = other.creationTime_ != null ? other.creationTime_.Clone() : null;
       status_ = other.status_;
@@ -1532,14 +1568,14 @@ namespace TradeMex {
       }
     }
 
-    /// <summary>Field number for the "instrument" field.</summary>
-    public const int InstrumentFieldNumber = 3;
-    private string instrument_ = "";
+    /// <summary>Field number for the "stock" field.</summary>
+    public const int StockFieldNumber = 3;
+    private string stock_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Instrument {
-      get { return instrument_; }
+    public string Stock {
+      get { return stock_; }
       set {
-        instrument_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        stock_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1613,7 +1649,7 @@ namespace TradeMex {
       }
       if (Id != other.Id) return false;
       if (Type != other.Type) return false;
-      if (Instrument != other.Instrument) return false;
+      if (Stock != other.Stock) return false;
       if (!object.Equals(Price, other.Price)) return false;
       if (!object.Equals(CreationTime, other.CreationTime)) return false;
       if (Status != other.Status) return false;
@@ -1627,7 +1663,7 @@ namespace TradeMex {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (Type != global::TradeMex.OrderType.Buy) hash ^= Type.GetHashCode();
-      if (Instrument.Length != 0) hash ^= Instrument.GetHashCode();
+      if (Stock.Length != 0) hash ^= Stock.GetHashCode();
       if (price_ != null) hash ^= Price.GetHashCode();
       if (creationTime_ != null) hash ^= CreationTime.GetHashCode();
       if (Status != global::TradeMex.OrderStatus.Active) hash ^= Status.GetHashCode();
@@ -1657,9 +1693,9 @@ namespace TradeMex {
         output.WriteRawTag(16);
         output.WriteEnum((int) Type);
       }
-      if (Instrument.Length != 0) {
+      if (Stock.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Instrument);
+        output.WriteString(Stock);
       }
       if (price_ != null) {
         output.WriteRawTag(34);
@@ -1698,9 +1734,9 @@ namespace TradeMex {
         output.WriteRawTag(16);
         output.WriteEnum((int) Type);
       }
-      if (Instrument.Length != 0) {
+      if (Stock.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Instrument);
+        output.WriteString(Stock);
       }
       if (price_ != null) {
         output.WriteRawTag(34);
@@ -1737,8 +1773,8 @@ namespace TradeMex {
       if (Type != global::TradeMex.OrderType.Buy) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
-      if (Instrument.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Instrument);
+      if (Stock.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Stock);
       }
       if (price_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Price);
@@ -1772,8 +1808,8 @@ namespace TradeMex {
       if (other.Type != global::TradeMex.OrderType.Buy) {
         Type = other.Type;
       }
-      if (other.Instrument.Length != 0) {
-        Instrument = other.Instrument;
+      if (other.Stock.Length != 0) {
+        Stock = other.Stock;
       }
       if (other.price_ != null) {
         if (price_ == null) {
@@ -1825,7 +1861,7 @@ namespace TradeMex {
             break;
           }
           case 26: {
-            Instrument = input.ReadString();
+            Stock = input.ReadString();
             break;
           }
           case 34: {
@@ -1883,7 +1919,7 @@ namespace TradeMex {
             break;
           }
           case 26: {
-            Instrument = input.ReadString();
+            Stock = input.ReadString();
             break;
           }
           case 34: {

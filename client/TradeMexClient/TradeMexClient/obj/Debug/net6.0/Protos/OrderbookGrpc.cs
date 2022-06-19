@@ -48,15 +48,15 @@ namespace TradeMexClient {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::TradeMexClient.GetOrderBookSnapshotRequest> __Marshaller_trademex_GetOrderBookSnapshotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TradeMexClient.GetOrderBookSnapshotRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::TradeMexClient.GetOrderBookSnapshotResponse> __Marshaller_trademex_GetOrderBookSnapshotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TradeMexClient.GetOrderBookSnapshotResponse.Parser));
+    static readonly grpc::Marshaller<global::TradeMexClient.Order> __Marshaller_trademex_Order = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TradeMexClient.Order.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::TradeMexClient.GetOrderBookSnapshotRequest, global::TradeMexClient.GetOrderBookSnapshotResponse> __Method_GetOrderBookSnapshot = new grpc::Method<global::TradeMexClient.GetOrderBookSnapshotRequest, global::TradeMexClient.GetOrderBookSnapshotResponse>(
-        grpc::MethodType.Unary,
+    static readonly grpc::Method<global::TradeMexClient.GetOrderBookSnapshotRequest, global::TradeMexClient.Order> __Method_GetOrderBookSnapshot = new grpc::Method<global::TradeMexClient.GetOrderBookSnapshotRequest, global::TradeMexClient.Order>(
+        grpc::MethodType.ServerStreaming,
         __ServiceName,
         "GetOrderBookSnapshot",
         __Marshaller_trademex_GetOrderBookSnapshotRequest,
-        __Marshaller_trademex_GetOrderBookSnapshotResponse);
+        __Marshaller_trademex_Order);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -92,24 +92,14 @@ namespace TradeMexClient {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::TradeMexClient.GetOrderBookSnapshotResponse GetOrderBookSnapshot(global::TradeMexClient.GetOrderBookSnapshotRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::TradeMexClient.Order> GetOrderBookSnapshot(global::TradeMexClient.GetOrderBookSnapshotRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetOrderBookSnapshot(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::TradeMexClient.GetOrderBookSnapshotResponse GetOrderBookSnapshot(global::TradeMexClient.GetOrderBookSnapshotRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::TradeMexClient.Order> GetOrderBookSnapshot(global::TradeMexClient.GetOrderBookSnapshotRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetOrderBookSnapshot, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::TradeMexClient.GetOrderBookSnapshotResponse> GetOrderBookSnapshotAsync(global::TradeMexClient.GetOrderBookSnapshotRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetOrderBookSnapshotAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::TradeMexClient.GetOrderBookSnapshotResponse> GetOrderBookSnapshotAsync(global::TradeMexClient.GetOrderBookSnapshotRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetOrderBookSnapshot, null, options, request);
+        return CallInvoker.AsyncServerStreamingCall(__Method_GetOrderBookSnapshot, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

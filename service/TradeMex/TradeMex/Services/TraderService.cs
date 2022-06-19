@@ -16,7 +16,7 @@ public class TraderService : Trader.TraderBase
 
     public override Task<CreateOrderResponse> CreateOrder(CreateOrderRequest request, ServerCallContext context)
     {
-        _logger.LogInformation("Order received for instrument: {InstrumentCode}", request.InstrumentCode);
+        _logger.LogInformation("Order received for instrument: {InstrumentCode}", request.Stock);
 
         var orderId = Guid.NewGuid();
         var order = new Order
@@ -25,7 +25,7 @@ public class TraderService : Trader.TraderBase
             Price = request.Price,
             CreationTime = Timestamp.FromDateTime(DateTime.UtcNow),
             Status = OrderStatus.Active,
-            Instrument = request.InstrumentCode,
+            Stock = request.Stock,
             Type = request.OrderType
         };
 
@@ -41,6 +41,7 @@ public class TraderService : Trader.TraderBase
             );
         }
 
+        _logger.LogInformation("Order successfully created {Order}", order);
         return Task.FromResult(new CreateOrderResponse
         {
             ResponseType = ResponseType.Accepted,
@@ -52,36 +53,50 @@ public class TraderService : Trader.TraderBase
     {
         _logger.LogInformation("Cancel Order with Id: {OrderId}", request.OrderId);
 
-         var result = _ordersBook.Orders.TryGetValue(Guid.Parse(request.OrderId), out var order );
+        var result = _ordersBook.Orders.TryGetValue(Guid.Parse(request.OrderId), out var order);
 
-         if (result && order is not null)
-         {
-             order.Status = OrderStatus.Canceled;
-             order.CancellationTime = Timestamp.FromDateTime(DateTime.UtcNow);
-         }
-         
+        if (result && order is not null)
+        {
+            order.Status = OrderStatus.Canceled;
+            order.CancellationTime = Timestamp.FromDateTime(DateTime.UtcNow);
+            order.Type = order.Type;
+            return Task.FromResult(new CancelOrderResponse
+            {
+                OrderId = order.Id,
+                ResponseType = result ? ResponseType.Accepted : ResponseType.Rejected,
+                CancellationTime = order.CancellationTime
+            });
+        }
+
         return Task.FromResult(new CancelOrderResponse
         {
-            OrderId = Guid.NewGuid().ToString(),
-            ResponseType = result ? ResponseType.Accepted : ResponseType.Rejected
+            ResponseType = ResponseType.Rejected,
         });
     }
 
     public override Task<UpdateOrderResponse> UpdateOrder(UpdateOrderRequest request, ServerCallContext context)
     {
         _logger.LogInformation("Update Order with Id: {OrderId}", request.OrderId);
-        
-         var result = _ordersBook.Orders.TryGetValue(Guid.Parse(request.OrderId), out var order );
 
-         if (result && order is not null)
-         {
-             order.Price = request.Price;
-             order.UpdateTime = Timestamp.FromDateTime(DateTime.UtcNow);
-         }
+        var result = _ordersBook.Orders.TryGetValue(Guid.Parse(request.OrderId), out var order);
+
+        if (result && order is not null)
+        {
+            order.Price = request.Price;
+            order.UpdateTime = Timestamp.FromDateTime(DateTime.UtcNow);
+            order.Type = order.Type;
+            return Task.FromResult(new UpdateOrderResponse
+            {
+                OrderId = order.Id,
+                ResponseType = ResponseType.Accepted,
+                UpdateTime = Timestamp.FromDateTime(DateTime.UtcNow),
+                Price = order.Price
+            });
+        }
+
         return Task.FromResult(new UpdateOrderResponse
         {
-            OrderId = Guid.NewGuid().ToString(),
-            ResponseType = ResponseType.Accepted
+            ResponseType = ResponseType.Rejected
         });
     }
 }

@@ -7,22 +7,17 @@ import "google/protobuf/timestamp.proto";
 package trademex;
 
 service Trader {
-  // Creates new order in the Book
   rpc CreateOrder (CreateOrderRequest) returns (CreateOrderResponse);
-  // Cancel order in the Book
   rpc CancelOrder (CancelOrderRequest) returns (CancelOrderResponse);
-  // Update order in the Book
   rpc UpdateOrder (UpdateOrderRequest) returns (UpdateOrderResponse);
 }
 
-// Order Creation Request
 message CreateOrderRequest {
   OrderType orderType = 1;
-  string instrumentCode = 2;
+  string stock = 2;
   DecimalValue price = 3;
 }
 
-// Order Creation Response
 message CreateOrderResponse {
   ResponseType responseType = 1;
   Order order = 2;
@@ -43,11 +38,11 @@ message UpdateOrderRequest {
   DecimalValue price = 2;
 }
 
-// Order Creation Response
 message UpdateOrderResponse {
   string orderId = 1;
   ResponseType responseType = 2;
   google.protobuf.Timestamp updateTime = 3;
+  DecimalValue price = 4;
 }
 
 // Common types
@@ -55,7 +50,7 @@ message UpdateOrderResponse {
 message Order {
   string id = 1;
   OrderType type = 2;
-  string instrument = 3;
+  string stock = 3;
   DecimalValue price = 4;
   google.protobuf.Timestamp creationTime = 5;
   OrderStatus status = 6;

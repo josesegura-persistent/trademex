@@ -48,15 +48,15 @@ namespace TradeMex {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::TradeMex.GetOrderBookSnapshotRequest> __Marshaller_trademex_GetOrderBookSnapshotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TradeMex.GetOrderBookSnapshotRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::TradeMex.GetOrderBookSnapshotResponse> __Marshaller_trademex_GetOrderBookSnapshotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TradeMex.GetOrderBookSnapshotResponse.Parser));
+    static readonly grpc::Marshaller<global::TradeMex.Order> __Marshaller_trademex_Order = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::TradeMex.Order.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::TradeMex.GetOrderBookSnapshotRequest, global::TradeMex.GetOrderBookSnapshotResponse> __Method_GetOrderBookSnapshot = new grpc::Method<global::TradeMex.GetOrderBookSnapshotRequest, global::TradeMex.GetOrderBookSnapshotResponse>(
-        grpc::MethodType.Unary,
+    static readonly grpc::Method<global::TradeMex.GetOrderBookSnapshotRequest, global::TradeMex.Order> __Method_GetOrderBookSnapshot = new grpc::Method<global::TradeMex.GetOrderBookSnapshotRequest, global::TradeMex.Order>(
+        grpc::MethodType.ServerStreaming,
         __ServiceName,
         "GetOrderBookSnapshot",
         __Marshaller_trademex_GetOrderBookSnapshotRequest,
-        __Marshaller_trademex_GetOrderBookSnapshotResponse);
+        __Marshaller_trademex_Order);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -69,7 +69,7 @@ namespace TradeMex {
     public abstract partial class OrderBookBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::TradeMex.GetOrderBookSnapshotResponse> GetOrderBookSnapshot(global::TradeMex.GetOrderBookSnapshotRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task GetOrderBookSnapshot(global::TradeMex.GetOrderBookSnapshotRequest request, grpc::IServerStreamWriter<global::TradeMex.Order> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -92,7 +92,7 @@ namespace TradeMex {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, OrderBookBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetOrderBookSnapshot, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::TradeMex.GetOrderBookSnapshotRequest, global::TradeMex.GetOrderBookSnapshotResponse>(serviceImpl.GetOrderBookSnapshot));
+      serviceBinder.AddMethod(__Method_GetOrderBookSnapshot, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::TradeMex.GetOrderBookSnapshotRequest, global::TradeMex.Order>(serviceImpl.GetOrderBookSnapshot));
     }
 
   }
